@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int sayi,i;
+
+
+void uret(){
+	int k;
+	srand(time(NULL));
+	printf("Bir sayi giriniz: ");
+	scanf("%d",&sayi);
+	int dizi[sayi];
+	printf("Dizimiz: \n");
+	for(i=0;i<sayi;i++){
+		k=rand()%5;
+		dizi[i]=k;
+		printf("%d\n",dizi[i]);
+	}
+	printf("Dizinin tersten yazilisi:\n\n");
+	for(i=sayi-1;i>=0;i--){
+		printf("%d\n",dizi[i]);	
+		}
+	
+	
+	
+	
+}
+
+int main(int argc, char *argv[]) {
+	uret();
+	return 0;
+}
+
+
